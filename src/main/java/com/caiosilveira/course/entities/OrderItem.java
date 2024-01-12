@@ -41,7 +41,7 @@ public class OrderItem implements Serializable {
     public void setOrder(Order order) {
         this.id.setOrder(order);
     }
-
+    
     public Product getProduct() {
         return this.id.getProduct();
     }
@@ -86,6 +86,10 @@ public class OrderItem implements Serializable {
         } else if (!id.equals(other.id))
             return false;
         return true;
+    }
+
+    public Double getSubTotal() {
+        return this.price * this.quantity;
     }
 
     
