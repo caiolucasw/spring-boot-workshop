@@ -12,9 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.caiosilveira.course.entities.User;
 import com.caiosilveira.course.services.UserService;
 
-import io.micrometer.core.ipc.http.HttpSender.Response;
-
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
